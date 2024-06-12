@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Error-Filled Page</title>
+</head>
+<body>
+    <h1>Welcome to My Error-Filled Page</h1>
+    
+    <p>This is a paragraph with mismatched tags and missing closing tags.</p>
+    
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+        <li>Item 6</li>
+        <li>Item 7</li>
+        <li>Item 8</li>
+        <li>Item 9</li>
+        <li>Item 10</li>
+    </ol>
+
+    <p>This is another paragraph without proper indentation.</p>
+    
+    <img src="image.jpg" alt="image">
+
+    <a href="https://www.example.com" target="_blank">Click me!</a>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>Jane</td>
+            <td>30</td>
+        </tr>
+    </table>
+    
+    <img source="error.jpeg" alt="Error Image">
+
+    <div style="text-align: center;"></div>
+
+    <p style="background-color:lightgray;">Text</p>
+
+    <input type="button" value="Click me">
+
+    <!-- This is an unclosed comment -->
+    <a href="#"> Link without closing tag </a>
+    <p><em>Underlined text</em></p>
+
+
+    <dl>
+        <dt>Descriptive Item Title</dt>
+        <dd>Descriptive Item Text</dd>
+    </dl>
+
+
+</body>
+</html>
+<!-- Error 1:  Missing doctype -->
+<!-- Error 2:  Repeated Html tag -->
+<!-- Error 3:  head element is not closed, should be closed under title tag-->
+<!-- Error 4:  <h1> tag not closed -->
+<!-- Error 5:  no opening <p> tag for welcome to my error page   -->
+<!-- Error 6:  opening tag is <ol> and closes with </ul>, needs to both me ol for organized list -->
+<!-- Error 7:  Missing <p> closing tag   -->
+<!-- Error 8:  incorrect <img> closing tag, missing  alt="image" -->
+<!-- Error 9:  missing table closing tag          -->
+<!-- Error 10: <td> tag unclosed within table          -->
+<!-- Error 11: incorrect tag for center text            -->
+<!-- Error 12: remove <p> tags for background color,    -->
+<!-- Error 13: incorrect use of backgroundcolor attribute            -->
+<!-- Error 14: missing input closing tag               -->
+<!-- Error 15: incorrect paragraph indentation         -->
+<!-- Error 17: missing closing tag on comment              -->
+<!-- Error 18: missing closing <a> tag      -->
+<!-- Error 19: <p> and <em> tags mixed around in closing underlined text           -->
+<!-- Error 20: descriptive title needs proper tags (<dt>)    -->
+<!-- Error 20 descriptive text needs proper tags (<dd>)-->
