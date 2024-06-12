@@ -24,7 +24,9 @@ body {
   }
 
   a:link,
-  a:visited {
+  a:visited,
+  
+  ul{
     color: #fb6542;
     background-color: #eeeeee;
     border: 5px solid purple;
