@@ -16,6 +16,8 @@ body {
   h2 {
     font-size: 1.5em;
     font-style: italic;
+    border: 5px solid purple;
+    padding: 10px 50px 20px;
   }
 
   .job-title {
@@ -31,6 +33,4 @@ body {
 
   a:hover {
     text-decoration: green;
-    border: 5px solid purple;
-    padding: 10px 50px 20px;
   }
