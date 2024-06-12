@@ -79,8 +79,8 @@
 <!-- Error 13: incorrect use of backgroundcolor attribute            -->
 <!-- Error 14: missing input closing tag               -->
 <!-- Error 15: incorrect paragraph indentation         -->
-<!-- Error 17: missing closing tag on comment              -->
-<!-- Error 18: missing closing <a> tag      -->
-<!-- Error 19: <p> and <em> tags mixed around in closing underlined text           -->
-<!-- Error 20: descriptive title needs proper tags (<dt>)    -->
-<!-- Error 20 descriptive text needs proper tags (<dd>)-->
+<!-- Error 16: missing closing tag on comment              -->
+<!-- Error 17: missing closing <a> tag      -->
+<!-- Error 18: <p> and <em> tags mixed around in closing underlined text           -->
+<!-- Error 19: descriptive title needs proper tags (<dt>)    -->
+<!-- Error 20: descriptive text needs proper tags (<dd>)-->
