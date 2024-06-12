@@ -27,10 +27,10 @@ body {
   a:visited {
     color: #fb6542;
     background-color: #eeeeee;
-    border: 5px solid purple;
-    padding: 10px 50px 20px;
   }
 
   a:hover {
     text-decoration: green;
+    border: 5px solid purple;
+    padding: 10px 50px 20px;
   }
