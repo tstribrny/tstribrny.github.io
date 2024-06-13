@@ -1,0 +1,40 @@
+/* General Page Styles */
+body {
+    margin: 0;
+  }
+  
+  html {
+    font-family: 'Helvetica neue', Arial, 'sans serif';
+    font-size: 10px;
+    background-color: #ccc;
+  }
+  
+/*Setup of Card Container Styles*/
+
+.card article img{
+  float: right; 
+}
+
+
+/* Header and Footer Styles*/
+header {
+  background: linear-gradient( darkred, red);
+  border-radius: 30px; 
+  max-height: 100%;
+
+}
+
+footer{ 
+  background: linear-gradient( darkred, red);
+  border-radius: 30px; 
+
+}
+
+/* Main Business Card Styles*/ 
+.card {
+  width: 35px;
+  height: 22px; 
+  background-color: red;
+  border:1px black;
+  border-radius: 30px; 
+}
