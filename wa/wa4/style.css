@@ -5,7 +5,7 @@ body {
   
   html {
     font-family: 'Helvetica neue', Arial, 'sans serif';
-    font-size: 10px;
+    font-size: 0.63em;
     background-color: #ccc;
   }
   
@@ -17,7 +17,7 @@ body {
 
 .card article{
   height: 15em;
-  background-color: rgba (0,0,0,0.5);
+  background-color: rgba(0,0,0,0.5);
 }
 
 /* Header and Footer Styles*/
@@ -34,14 +34,14 @@ h2, p{
 }
 h2{
   font-size: 1.25em; 
-  line-height:30px;
+  line-height:1.88em;
 }
 
 /* Main Business Card Styles*/ 
 .card {
-  width: 35px;
-  height: 22px; 
+  width: 2.19em;
+  height: 1.38em; 
   background-color: red;
-  border:1px black;
-  border-radius: 30px; 
+  border:0.06em solid black;
+  border-radius: 1.88em; 
 }
