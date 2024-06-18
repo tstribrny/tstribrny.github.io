@@ -5,8 +5,8 @@ body, html{
 }
 .scoreboard-container {
     position: absolute;
-    left: 20px; /* Adjust as needed */
-    top: 20px; /* Adjust as needed */
+    left: 10px; /* Adjust as needed */
+    top: 10px; /* Adjust as needed */
     background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
     color: white;
     padding: 20px;
@@ -14,7 +14,7 @@ body, html{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 .scoreboard {
-    width: 300px; /* Adjust scoreboard width as needed */
+    width: 100px; /* Adjust scoreboard width as needed */
 }
 .scoreboard-header {
     text-align: center;
