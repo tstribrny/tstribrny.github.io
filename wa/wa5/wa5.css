@@ -3,6 +3,60 @@ body, html{
     padding:0;
     height: 100%;
 }
+.scoreboard-container {
+    position: absolute;
+    left: 20px; /* Adjust as needed */
+    top: 20px; /* Adjust as needed */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.scoreboard {
+    width: 300px; /* Adjust scoreboard width as needed */
+}
+.scoreboard-header {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.scoreboard-header h1 {
+    font-size: 1.5rem;
+    margin: 5px 0;
+}
+
+.quarter {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.team {
+    text-align: center;
+    margin-bottom: 15px;
+}
+.team-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.team-score {
+    font-size: 3rem;
+}
+
+.team-quarters {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5px;
+}
+
+.quarter-input {
+    width: 50px;
+    text-align: center;
+    padding: 5px;
+    font-size: 0.9rem;
+}
 
 .background-image{
     position: relative;
@@ -15,35 +69,12 @@ body, html{
     display: block;
 }
 
-.score-overlay{
-    position: absolute; 
-    top: 20%;
-    left: 20px; 
-    display: flex; 
-    flex-direction: column; 
-    color: white; 
-    font-family: Arial, Helvetica, sans-serif; 
-    z-index: 1000;
+.team-quarters input[type="number"]::-webkit-outer-spin-button,
+.team-quarters input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 
-.score{
-    display:flex;
-    align-items: center; 
-    margin-bottom: 10px; 
-    border: 2px solid white;
-    padding: 5px;
-
-}
-
-.team-name{
-    width: 80px; 
-    font-weight: bold; 
-}
-
-.team-score {
-    font-size: 24px;
-    margin-left: 10px; 
-}
 
 .channel-overlay{
     position: absolute;
