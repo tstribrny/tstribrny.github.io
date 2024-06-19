@@ -96,3 +96,31 @@ p{
   padding: 1em;
   line-height: 2.5em;
 }
+.text-content2{
+  display:flex;
+  flex-direction:column;
+  color: white;
+  /* margin-right: 220px; */
+  padding: 1em;
+  line-height: 2.5em;
+  font-family: 'times new roman';
+}
+h3{
+  font-size: 3em; 
+  line-height: 1em;
+  font-family: 'times new roman';
+}
+.card-footer p{
+  font-size: 3em; 
+  line-height: 1em;
+}
+footer{
+  font-size: 2em;
+  line-height: 1em;
+}
+
+.card article-1{
+  height: 15em;
+  background-color: rgba(0,0,0,0.5);
+
+}
