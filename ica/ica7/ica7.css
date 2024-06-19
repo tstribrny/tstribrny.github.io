@@ -1,30 +1,50 @@
 body{
     background-color: khaki;
-}
-#box1{
-    width: 25vw;
-    height: 20vh;
-    background-color: indianred;
-    transition: 1s ease-in-out;
-}
+    }
 
-#box1:hover{
-    filter: purple;
-}
+    #box1{
+        width: 25vw;
+        height: 20vh;
+        background-color: indianred;
+    }
 
-#box2{
-    width: 25vw;
-    height:20vh;
-    position: relative;
-    background-color: orangered;
-}
+    #box1:hover{
+        background-color: purple;
+    }
+
+    #box2{
+        width: 25vw;
+        height:20vh;
+        position: relative;
+        background-color: orangered;
+        animation-name: box2move;
+        animation-duration:6s;
+        animation-iteration-count: infinite;
+    }
 
 @keyframes box2move{
-    0%, 100%{
-        transform: translateY(0); 
-    }
-    50%{
-        transform: translateY(100px);
-    }
+   from{
+    margin:0;
 
+   }
+   25%{
+    margin-left:70%;
+    margin-top: 0;
+
+   }
+   50%{
+    margin-left:70%;
+    margin-top: 50%;
+
+
+   }
+   75%{
+    margin-left:0%;
+    margin-top: 50%;
+
+   }
+
+   to{
+    margin:0;
+   }
 }
