@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2 {
+  margin-top: 0;
+  font-family: "Homemade Apple", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+h3,
+h4,
+p {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* intro */
+.introSection {
+  background-color: beige;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.introTextContainer {
+  width: 50%;
+}
+
+/* end intro */
+
+.concertListingSection {
+  background-color: antiquewhite;
+  padding: 60px 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  align-items: center;
+}
+
+.concertListingItem {
+  width: 60%;
+  max-width: 800px;
+  background-color: lightgrey;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.concertFooter {
+  display: flex;
+}
+.concertListingFooterItem {
+  flex: 1;
+}
