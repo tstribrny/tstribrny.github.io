@@ -22,6 +22,7 @@ p {
 /* intro */
 .introSection {
   background-image: url("flowers.jpg");
+  background-image: grayscale;
   opacity: 100%;
   background-color: beige;
   height: 100vh;
@@ -32,6 +33,9 @@ p {
 
 .introTextContainer {
   width: 50%;
+  background-color: white;
+  border-radius: 20px;
+  padding: 30px;
 }
 
 /* end intro */
@@ -48,7 +52,7 @@ p {
 .concertListingItem {
   width: 60%;
   max-width: 800px;
-  background-color: rgb(245, 235, 235);
+  background-color: white;
   padding: 30px;
   border-radius: 20px;
 }
