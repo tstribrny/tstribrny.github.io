@@ -22,7 +22,8 @@ p {
 
 /* intro */
 .introSection {
-  opacity: 100%;
+  background-image: "flower.jpg";
+
   background-color: beige;
   height: 100vh;
   display: flex;
@@ -48,9 +49,10 @@ p {
 /* end intro */
 
 .concertListingSection {
-  background-image: "flower.jpg";
   list-style: none;
   margin: 0;
+  background-image: url("flowers.jpg");
+  background-size: auto;
   background-color: rgb(224, 224, 205);
   padding: 50px 50px 50px;
   display: grid;
@@ -66,7 +68,6 @@ p {
   padding: 60px;
   border-radius: 20px;
 }
-
 .concertListingDates {
   font-style: italic;
   font-weight: 300;
