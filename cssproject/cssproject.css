@@ -16,13 +16,12 @@ p {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 600;
+  font-size: smaller;
   font-style: normal;
 }
 
 /* intro */
 .introSection {
-  background-image: url("flowers.jpg");
-  background-image: grayscale;
   opacity: 100%;
   background-color: beige;
   height: 100vh;
@@ -32,12 +31,19 @@ p {
 }
 
 .introTextContainer {
-  width: 50%;
+  width: 70%;
   background-color: white;
   border-radius: 20px;
   padding: 30px;
 }
 
+.introTitle {
+  font-size: 40px;
+  text-align: center;
+}
+.introDescription {
+  font-size: larger;
+}
 /* end intro */
 
 .concertListingSection {
@@ -45,7 +51,7 @@ p {
   padding: 60px 0;
   display: flex;
   flex-direction: column;
-  row-gap: 30px;
+  row-gap: 50px;
   align-items: center;
 }
 
@@ -57,9 +63,18 @@ p {
   border-radius: 20px;
 }
 
+.concertListingDates {
+  font-style: italic;
+}
+
 .concertFooter {
   display: flex;
 }
 .concertListingFooterItem {
   flex: 1;
+}
+
+h3 {
+  font-size: 20px;
+  font-family: "homemade apple";
 }
