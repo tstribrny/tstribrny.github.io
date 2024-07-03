@@ -47,9 +47,9 @@
         data.forEach((cat) => {
           cat.kittens.forEach((kitten) => {
             totalKittens++;
-            if (kitten.gender === "male") {
+            if (kitten.gender == "m") {
               maleKittens++;
-            } else if (kitten.gender === "female") {
+            } else if (kitten.gender == "f") {
               femaleKittens++;
             }
           });
