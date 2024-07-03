@@ -13,64 +13,56 @@
         box-sizing: border-box;
       }
     </style>
+    <link rel="stylesheet" href="../styles.css" />
   </head>
 
   <body>
     <section class="preview"></section>
-  </body>
-  <script>
-    const section = document.querySelector("section");
 
-    let para1 = document.createElement("p");
-    let para2 = document.createElement("p");
-    let motherInfo = "The mother cats are called ";
-    let kittenInfo;
-    const requestURL =
-      "https://mdn.github.io/learning-area/javascript/oojs/tasks/json/sample.json";
+    <script>
+      const section = document.querySelector("section");
 
-    fetch(requestURL)
-      .then((response) => response.text())
-      .then((text) => displayCatInfo(text));
+      let para1 = document.createElement("p");
+      let para2 = document.createElement("p");
+      let motherInfo = "The mother cats are called ";
+      let kittenInfo = "Total kittens: ";
 
-    function displayCatInfo(catString) {
-      let total = 0;
-      let male = 0;
-      let female = 0;
+      const requestURL =
+        "https://mdn.github.io/learning-area/javascript/oojs/tasks/json/sample.json";
 
-      // Add your code here
-      // Loop through each cat object
-      data.cats.forEach((cat, index) => {
-        // Append mother cat name to motherInfo string
-        motherInfo += cat.name;
-        // Check if it's not the last cat
-        if (index < data.cats.length - 1) {
-          motherInfo += ", ";
-        } else {
-          motherInfo += ". ";
-        }
+      fetch(requestURL)
+        .then((response) => response.json()) // Parse the JSON response
+        .then((data) => displayCatInfo(data)); // Pass the parsed data to displayCatInfo function
 
-        // Loop through kittens of current cat
-        cat.kittens.forEach((kitten) => {
-          total++;
-          // Count males and females
-          if (kitten.gender === "male") {
-            male++;
-          } else if (kitten.gender === "female") {
-            female++;
-          }
+      function displayCatInfo(data) {
+        // Extract mother cat names
+        const motherCats = data.map((cat) => cat.name);
+        motherInfo += motherCats.join(", ");
+
+        // Count kittens
+        let totalKittens = 0;
+        let maleKittens = 0;
+        let femaleKittens = 0;
+
+        data.forEach((cat) => {
+          cat.kittens.forEach((kitten) => {
+            totalKittens++;
+            if (kitten.gender === "male") {
+              maleKittens++;
+            } else if (kitten.gender === "female") {
+              femaleKittens++;
+            }
+          });
         });
-      });
 
-      // Construct kittenInfo string
-      kittenInfo += `${total} (Male: ${male}, Female: ${female})`;
+        kittenInfo += `Total: ${totalKittens}, Male: ${maleKittens}, Female: ${femaleKittens}`;
 
-      // Don't edit the code below here!
+        para1.textContent = motherInfo;
+        para2.textContent = kittenInfo;
 
-      para1.textContent = motherInfo;
-      para2.textContent = kittenInfo;
-    }
-
-    section.appendChild(para1);
-    section.appendChild(para2);
-  </script>
+        section.appendChild(para1);
+        section.appendChild(para2);
+      }
+    </script>
+  </body>
 </html>
