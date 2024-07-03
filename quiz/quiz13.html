@@ -31,15 +31,15 @@
         "https://mdn.github.io/learning-area/javascript/oojs/tasks/json/sample.json";
 
       fetch(requestURL)
-        .then((response) => response.json()) // Parse the JSON response
-        .then((data) => displayCatInfo(data)); // Pass the parsed data to displayCatInfo function
+        .then((response) => response.json())
+        .then((data) => displayCatInfo(data)); 
 
       function displayCatInfo(data) {
-        // Extract mother cat names
+      
         const motherCats = data.map((cat) => cat.name);
         motherInfo += motherCats.join(", ");
 
-        // Count kittens
+    
         let totalKittens = 0;
         let maleKittens = 0;
         let femaleKittens = 0;
